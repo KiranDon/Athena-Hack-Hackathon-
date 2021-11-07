@@ -38,6 +38,10 @@ header .navLinks .navLink{
     font-size: 18px;
     cursor: pointer;
 }
+header .navLinks .navLink a{
+    text-decoration: none;
+    color: black;
+}
 header .navLinks .navLink:hover{
     color: rgba(0, 0, 0, 0.6);
 }
@@ -131,4 +135,55 @@ header .navLinks .navLink:hover{
 .hidden
 {
     display: none;
+}
+
+/* cart */
+.cartTable{
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 0 100px;
+}
+.cartTable table{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.cartTable table th{
+    color: white;
+    background-color: red;
+    width: 50%;
+    font-size: 20px;
+}
+.cartTable table td{
+    width: 50%;
+    text-align: center;
+}
+.cartTable table .sideBySide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartTable table .sideBySide .smallImage{
+    width: 150px;
+    height: 100px;
+}
+span{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+}
+.subTotal{
+    /* float: right; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.subTotal .proceed{
+    background: linear-gradient(to top left, #39b385, #9be15d);
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: poppinsfont;
+    font-size: 18px;
+    cursor: pointer;
 }
