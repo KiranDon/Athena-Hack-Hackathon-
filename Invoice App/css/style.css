@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: poppinsfont;
+    src: url("../font/Poppins-Medium.ttf");
+}
+body{
+    font-family: poppinsfont;
+    background-color: rgb(255, 255, 255);
+}
+.center{
+    text-align: center;
+    margin: 30px 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: rgb(246, 246, 246);
+}
+.logo{
+    /* height: 80px; */
+    transform: scale(0.7);
+}
+header .navLinks{
+    display: flex;
+    list-style-type: none;
+    height: 80px;
+    align-items: center;
+}
+header .navLinks .navLink{
+    margin: 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+header .navLinks .navLink:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.products .product{
+    /* border: 1px solid black; */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.products .product .productImage{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.products .product .price{
+    font-size: 18px;
+    color: rgba(4, 75, 133, 0.6);
+}
+.products .product .rating{
+    font-size: 14px;
+    /* color: rgba(4, 75, 133, 0.6); */
+}
+.products .product .addToCart{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 20px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: poppinsfont;
+    /* background: linear-gradient(45deg, #B1E48D, #78C9A4); */
+    background-color: #FF5151;
+    border-radius: 10px;
+    width: 100%;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+/* style for modal */
+.modal
+{
+    width: 40%;
+    padding: 50px;
+    background-color: #f3f3f3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    position: fixed;
+}
+.modal h2
+{
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.closeButton
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    display: inline;
+    background-color: rgba(218, 218, 218, 0.6);
+    border: none;
+    outline: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+.overlay
+{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    position: fixed;
+}
+.hidden
+{
+    display: none;
+}

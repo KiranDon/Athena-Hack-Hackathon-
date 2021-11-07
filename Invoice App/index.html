@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice App.</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2a8af94606.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="images/logo.PNG" alt="logo" class="logo">
+        </div>
+        <div class="right">
+            <ul class="navLinks">
+                <li class="navLink">Search <i class="fas fa-search"></i></li>
+                <li class="navLink">Wishlist <i class="fas fa-shopping-bag"></i></li>
+                <li class="navLink">Profile <i class="fas fa-user-alt"></i></li>
+                <li class="navLink">Cart <i class="fas fa-shopping-cart"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <h3 class="center">Showing results for branded items.</h3>
+
+    <div class="products">
+        <div class="product">
+            <img src="images/cam.jfif" alt="product image" class="productImage">
+            <h2 class="title">Camera</h2>
+            <h3 class="price">₹ 30000</h3>
+            <h3 class="rating">⭐⭐⭐⭐⭐(80)</h3>
+            <button class="addToCart">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/headphone.jfif" alt="product image" class="productImage">
+            <h2 class="title">Headphone</h2>
+            <h3 class="price">₹ 2000</h3>
+            <h3 class="rating">⭐⭐⭐⭐(350)</h3>
+            <button class="addToCart">Add To Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/spects.jfif" alt="product image" class="productImage">
+            <h2 class="title">Spects</h2>
+            <h3 class="price">₹ 600</h3>
+            <h3 class="rating">⭐⭐⭐⭐⭐(125)</h3>
+            <button class="addToCart">Add To Cart</button>
+        </div>
+    </div>
+
+
+    <!-- Modal start -->
+  <div class="modal">
+    <button class="closeButton">&times;</button>
+    <h3>We have created this fake product page just to simulate the work flow.</h3>
+    <ul>
+        <li><p>Our main task here is to generate the invoice for the customer.</p></li>
+        <li><p>Just add some products to cart and proceed to payment (no need to pay, its just a demonstration that's it.)</p></li>
+        <li><p>After completing the steps, you will be able to download the invoice.</p></li>
+        <li><p>And admin can be able to see all the invoices including status of the payments. For that there is a hidden page, which can be accessed by adding "/invoices" at the end of the URL.</p></li>
+    </ul>
+    
+      
+  </div>  
+  <div class="overlay"></div>
+  <!-- Modal End -->
+</body>
+</html>
