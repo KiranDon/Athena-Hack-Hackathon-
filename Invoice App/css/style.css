@@ -247,3 +247,52 @@ span{
 .success button:hover{
     background-color: rgb(228, 228, 228);
 }
+
+/* invoice */
+#invoice{
+    padding: 50px;
+    position: relative; 
+}
+.invoice{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px 50px;
+}
+.invoice .top{
+    display: flex;
+    justify-content: space-between;
+}
+.invoice .from{
+    margin: 30px 0;
+}
+.invoice .to{
+    display: flex;
+    justify-content: space-between;
+}
+.invoice table{
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+.invoice table #topRow{
+    background-color: rgb(83, 83, 83);
+}
+.invoice table th, td{
+    padding: 10px 0;
+}
+.invoice table tr:nth-child(odd){
+    background-color: rgb(235, 235, 235);
+}
+.invoice .subTotal{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    /* float: right; */
+    left: 80%;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
