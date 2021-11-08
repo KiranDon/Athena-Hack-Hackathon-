@@ -280,6 +280,9 @@ span{
 .invoice table th, td{
     padding: 10px 0;
 }
+.invoice table th{
+    color: white;
+}
 .invoice table tr:nth-child(odd){
     background-color: rgb(235, 235, 235);
 }
@@ -295,4 +298,25 @@ span{
 }
 .green{
     color: green;
+}
+
+/* all orders */
+.allOrders{
+    width: 100%;
+    padding-top: 20px;
+}
+.allOrders #orders{
+    text-align: center;
+    width: 100%;
+}
+.allOrders #orders th{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+}
+.allOrders #orders td{
+    padding: 8px;
+}
+.allOrders table tr:nth-child(odd){
+    background-color: rgb(207, 207, 207);
 }

@@ -39,10 +39,10 @@ function download(){
     var element = document.getElementById('invoice');
     html2pdf(element);
 }
-setTimeout(download, 2000);
+setTimeout(download, 4000);
 setTimeout(()=>{
     localStorage.removeItem("cartItems");
-}, 3000);
+}, 5000);
 setTimeout(()=>{
     window.location = "index.html";
-}, 4000);
+}, 6000);

@@ -20,8 +20,7 @@ let userData;
 
 document.getElementById('pay').addEventListener("click", (e)=>{
     e.preventDefault;
-    orders.push(cartItems);
-    localStorage.setItem('successfulOrders', JSON.stringify(orders));
+    
     // localStorage.removeItem("cartItems");
     // console.log();
     let name = document.getElementById('name').value;
@@ -41,5 +40,12 @@ document.getElementById('pay').addEventListener("click", (e)=>{
     }
     console.log(userData)
     localStorage.setItem("userData", JSON.stringify(userData));
+
+    orders.push({name: name,
+        amount: amountPayable,
+        status: method,
+        dateAndTime: `${new Date()}`.slice(0, 25)
+    });
+        localStorage.setItem('successfulOrders', JSON.stringify(orders));
     window.location = "success.html";
 })
