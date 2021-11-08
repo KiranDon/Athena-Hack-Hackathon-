@@ -187,3 +187,63 @@ span{
     font-size: 18px;
     cursor: pointer;
 }
+
+/* payment */
+.main{
+    display: flex;
+    width: 100%;
+    padding: 0 100px;
+}
+.main .left, .main .right{
+    width: 50%;
+}
+.main .left form{
+    display: flex;
+    flex-direction: column;
+}
+.main .left form input, .main .left form textarea{
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 18px;
+    background-color: rgb(228, 228, 228);
+}
+#pay{
+    padding-top: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+.centerr{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+.main .right img{
+    height: 440px
+}
+
+/* success */
+.success{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.success img{
+    width: 300px;
+}
+.success button{
+    padding: 10px 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.success button:hover{
+    background-color: rgb(228, 228, 228);
+}

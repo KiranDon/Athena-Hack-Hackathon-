@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment.</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://kit.fontawesome.com/2a8af94606.js" crossorigin="anonymous"></script>
+        <script src="js/payment.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html"><img src="images/logo.PNG" alt="logo" class="logo"></a>
+        </div>
+        <div class="right">
+            <ul class="navLinks">
+                <li class="navLink">Search <i class="fas fa-search"></i></li>
+                <li class="navLink">Wishlist <i class="fas fa-shopping-bag"></i></li>
+                <li class="navLink">Profile <i class="fas fa-user-alt"></i></li>
+                <li class="navLink"><a href="cart.html">Cart</a> <i class="fas fa-shopping-cart"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <h3 class="center">Place your order by completing payment.</h3>
+
+    <div class="main">
+        <div class="left">
+            <h3 class="centerr">Enter your details:</h3>
+
+            <form autocomplete="off">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="subject">Phone</label>
+                <input type="number" name="phone" id="phone">
+                <label for="message">Address</label>
+                <textarea name="address" cols="30" rows="5" id="address"></textarea>
+                <div class="methods">
+                    <label for="paymentMethod">Select payment method:</label>&nbsp;&nbsp;
+                    UPI <input type="radio" name="paymentMethod" id="method" value="upi">
+                    Card <input type="radio" name="paymentMethod" id="method" value="card">
+                    COD <input type="radio" name="paymentMethod" id="method" value="cod">
+                </div>
+            </form>
+            <button id="pay">Place Order by paying ₹ <span id="amountPayable"></span></button>
+
+        </div>
+        <div class="right centerr">
+            <img src="images/pay.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

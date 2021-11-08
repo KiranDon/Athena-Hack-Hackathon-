@@ -1,0 +1,1 @@
+document.getElementById("success").addEventListener("click", () => window.location = 'invoice.html');

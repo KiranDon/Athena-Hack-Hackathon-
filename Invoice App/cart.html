@@ -10,58 +10,61 @@
         <script src="js/cart.js" defer></script>
     </head>
 <body>
-    <header>
-        <div class="left">
-            <a href="index.html"><img src="images/logo.PNG" alt="logo" class="logo"></a>
+        <header>
+            <div class="left">
+                <a href="index.html"><img src="images/logo.PNG" alt="logo" class="logo"></a>
+            </div>
+            <div class="right">
+                <ul class="navLinks">
+                    <li class="navLink">Search <i class="fas fa-search"></i></li>
+                    <li class="navLink">Wishlist <i class="fas fa-shopping-bag"></i></li>
+                    <li class="navLink">Profile <i class="fas fa-user-alt"></i></li>
+                    <li class="navLink"><a href="cart.html">Cart</a> <i class="fas fa-shopping-cart"></i></li>
+                </ul>
+            </div>
+        </header>
+    
+        <h3 class="center">Items in your cart.</h3>
+    
+        <div class="cartTable">
+            <table id="table">
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+                <!-- <tr>
+                    <td><div class="sideBySide">
+                        <img src="images/spects.jfif" class="smallImage">
+                        <h3 class="cartItemName">Spects<br><span>(Ordered by 14 people recently)</span></h3>
+                        
+                    </div></td>
+                    <td><h3 class="cartItemPrice">2000</h3></td>
+                </tr> -->
+                <!-- <tr>
+                    <td><div class="sideBySide">
+                        <img src="images/spects.jfif" class="smallImage">
+                        <h3 class="cartItemName">Spects<br><span>(Ordered by 14 people recently)</span></h3>
+                        
+                    </div></td>
+                    <td><h3 class="cartItemPrice">2000</h3></td>
+                </tr> -->
+                <!-- <tr>
+                    <td><div class="sideBySide">
+                        <img src="images/spects.jfif" class="smallImage">
+                        <h3 class="cartItemName">Spects<br><span>(Ordered by 14 people recently)</span></h3>
+                        
+                    </div></td>
+                    <td><h3 class="cartItemPrice">2000</h3></td>
+                </tr> -->
+            </table>
+            <div class="subTotal">
+                <a href="payment.html"><button class="proceed">Proceed to checkout</button></a>
+                <h3 id="subTotal">Sub total: 6000</h3>
+            </div>
         </div>
-        <div class="right">
-            <ul class="navLinks">
-                <li class="navLink">Search <i class="fas fa-search"></i></li>
-                <li class="navLink">Wishlist <i class="fas fa-shopping-bag"></i></li>
-                <li class="navLink">Profile <i class="fas fa-user-alt"></i></li>
-                <li class="navLink"><a href="cart.html">Cart</a> <i class="fas fa-shopping-cart"></i></li>
-            </ul>
-        </div>
-    </header>
 
-    <h3 class="center">Items in your cart.</h3>
-
-    <div class="cartTable">
-        <table id="table">
-            <tr>
-                <th>Product</th>
-                <th>Price</th>
-            </tr>
-            <!-- <tr>
-                <td><div class="sideBySide">
-                    <img src="images/spects.jfif" class="smallImage">
-                    <h3 class="cartItemName">Spects<br><span>(Ordered by 14 people recently)</span></h3>
-                    
-                </div></td>
-                <td><h3 class="cartItemPrice">2000</h3></td>
-            </tr> -->
-            <!-- <tr>
-                <td><div class="sideBySide">
-                    <img src="images/spects.jfif" class="smallImage">
-                    <h3 class="cartItemName">Spects<br><span>(Ordered by 14 people recently)</span></h3>
-                    
-                </div></td>
-                <td><h3 class="cartItemPrice">2000</h3></td>
-            </tr> -->
-            <!-- <tr>
-                <td><div class="sideBySide">
-                    <img src="images/spects.jfif" class="smallImage">
-                    <h3 class="cartItemName">Spects<br><span>(Ordered by 14 people recently)</span></h3>
-                    
-                </div></td>
-                <td><h3 class="cartItemPrice">2000</h3></td>
-            </tr> -->
-        </table>
-        <div class="subTotal">
-            <a href="payment.html"><button class="proceed">Proceed to checkout</button></a>
-            <h3 id="subTotal">Sub total: 6000</h3>
-        </div>
-    </div>
+    
+    
     
 </body>
 </html>
